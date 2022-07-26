@@ -14,10 +14,6 @@ contract SushiBar is ERC20("SushiBar", "xSUSHI"){
     IERC20 public sushi;
     address public withdrawAddress;
 
-    struct VestingStage {
-        uint256 date;
-        uint256 tokensUnlockedPercentage;
-    }
     uint256 public vestingStartTimestamp;
     uint256 public initialTokensBalance;
     // Define the Sushi token contract
